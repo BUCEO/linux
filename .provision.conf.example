@@ -1,0 +1,13 @@
+# Este archivo es un ejemplo del archivo de configuración para provision.sh
+# Para usarlo, cópialo a .provision.conf y ajusta los valores.
+
+# URL SSH del repositorio que se va a clonar (OBLIGATORIO)
+REPO_URL="git@github.com:usuario/mi-proyecto-laravel.git"
+
+# Directorio de instalación. Por defecto es $HOME/nombre-del-repo.
+# Si se deja vacío, el script preguntará.
+PROJECT_DIR="/home/usuario/proyectos/mi-proyecto-laravel"
+
+# Ambiente a construir: 'dev' o 'test'.
+# Esto define el archivo docker-compose a usar (ej: docker-compose.dev.yml).
+ENV_MODE="dev"
